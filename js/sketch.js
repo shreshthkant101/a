@@ -20,10 +20,15 @@ function preload() {
 
 function setup() {
     var canvas = createCanvas(800, 600);
-    canvas.parent('#canv');
-    if (displayWidth <= 281.196850394) {
+    
+    if (displayWidth <= 350) {
         tint(255, 255, 255, 0);
+        canvas.parent('#nope');
     }
+    else{
+     canvas.parent('#canv');
+    }
+   
 
 
     ground = createSprite(400, 565, 1280, 80);
